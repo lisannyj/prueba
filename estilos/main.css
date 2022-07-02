@@ -1,0 +1,63 @@
+:root{
+  --caca: #5DC5BB;
+  --pupu: #5D8FC5;
+  --degradado: linear-gradient(90deg, var(--pupu), var(--caca));
+  --degradado2: linear-gradient(90deg, var(--caca), var(--pupu));
+}
+
+.navbar{
+  background: var(--degradado2) !important;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3) !important;
+}
+
+
+
+
+.titulo{
+  color: var(--caca);
+}
+
+strong{
+  color: var(--caca);
+}
+
+p{
+  font-size: 1.2rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+
+.boton{
+  border-radius: 5rem !important;
+  background: var(--degradado) !important;
+  font-size: 1.5rem !important;
+  color: white !important;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, .1) !important;
+  transition: all .3s linear !important; 
+  animation: float 3s linear infinite !important;
+}
+
+@keyframes float{
+  0%, 100%{
+    transform: translateY(0rem);
+  }
+  50%{
+    transform: translateY(-.5rem);
+  }
+}
+
+.boton:hover{
+  transform: scale(1.1);
+}
+
+.card{
+  border: .1rem solid rgba(0, 0, 0, .2) !important;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1) !important;
+  transition: .2s linear !important;
+}
+
+
+footer{
+  background: var(--degradado2) !important;
+}
